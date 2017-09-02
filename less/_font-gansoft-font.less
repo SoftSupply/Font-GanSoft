@@ -1,0 +1,97 @@
+@font-face {
+ font-family: @font-gansoft-font-family;
+ src:url("@{font-gansoft-font-path}/font-gansoft.eot?v=@{font-gansoft-version}");
+ src:url("@{font-gansoft-font-path}/font-gansoft.eot?v=@{font-gansoft-version}#iefix") format("embedded-opentype"),
+  url("@{font-gansoft-font-path}/font-gansoft.ttf?v=@{font-gansoft-version}") format("truetype"),
+  url("@{font-gansoft-font-path}/font-gansoft.woff?v=@{font-gansoft-version}") format("woff"),
+  url("@{font-gansoft-font-path}/font-gansoft.svg?v=@{font-gansoft-version}#Font-GanSoft") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.gs {
+  display: inline-block;
+  font: normal normal normal 14px/1 @font-gansoft-font-family;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.gs-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.gs-2x {
+  font-size: 2em;
+}
+.gs-3x {
+  font-size: 3em;
+}
+.gs-4x {
+  font-size: 4em;
+}
+.gs-5x {
+  font-size: 5em;
+}
+.gs-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.gs-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.gs-ul > li {
+  position: relative;
+}
+.gs-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.gs-li.gs-lg {
+  left: -1.85714286em;
+}
+.gs-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.gs-pull-left {
+  float: left;
+}
+.gs-pull-right {
+  float: right;
+}
+.gs.gs-pull-left {
+  margin-right: .3em;
+}
+.gs.gs-pull-right {
+  margin-left: .3em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}

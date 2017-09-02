@@ -1,0 +1,155 @@
+{
+  "description": "The GanSoft iconic font and CSS framework",
+  "license": [
+    "MIT"
+  ],
+  "icons": [
+    {
+      "code": "0xf030",
+      "name": "growth"
+    },
+    {
+      "code": "0xf031",
+      "name": "growth-weight"
+    },
+    {
+      "code": "0xf001",
+      "name": "main-alert"
+    },
+    {
+      "code": "0xf002",
+      "name": "main-calendar"
+    },
+    {
+      "code": "0xf003",
+      "name": "main-code"
+    },
+    {
+      "code": "0xf004",
+      "name": "main-control"
+    },
+    {
+      "code": "0xf005",
+      "name": "main-definition"
+    },
+    {
+      "code": "0xf006",
+      "name": "main-edit"
+    },
+    {
+      "code": "0xf007",
+      "name": "main-settings"
+    },
+    {
+      "code": "0xf008",
+      "name": "main-tasks"
+    },
+    {
+      "code": "0xf060",
+      "name": "production"
+    },
+    {
+      "code": "0xf063",
+      "name": "production-drying"
+    },
+    {
+      "code": "0xf061",
+      "name": "production-milking"
+    },
+    {
+      "code": "0xf010",
+      "name": "registration"
+    },
+    {
+      "code": "0xf017",
+      "name": "registration-draft"
+    },
+    {
+      "code": "0xf014",
+      "name": "registration-herd"
+    },
+    {
+      "code": "0xf016",
+      "name": "registration-location"
+    },
+    {
+      "code": "0xf015",
+      "name": "registration-ownership"
+    },
+    {
+      "code": "0xf011",
+      "name": "registration-tagging"
+    },
+    {
+      "code": "0xf020",
+      "name": "reproduction"
+    },
+    {
+      "code": "0xf027",
+      "name": "reproduction-birthing"
+    },
+    {
+      "code": "0xf022",
+      "name": "reproduction-mating"
+    },
+    {
+      "code": "0xf025",
+      "name": "reproduction-scanning"
+    },
+    {
+      "code": "0xf0a1",
+      "name": "scores-condition"
+    },
+    {
+      "code": "0xf0b2",
+      "name": "species-buffalo"
+    },
+    {
+      "code": "0xf0b8",
+      "name": "species-cat"
+    },
+    {
+      "code": "0xf0b1",
+      "name": "species-cow"
+    },
+    {
+      "code": "0xf0b7",
+      "name": "species-dog"
+    },
+    {
+      "code": "0xf0b5",
+      "name": "species-goat"
+    },
+    {
+      "code": "0xf0b3",
+      "name": "species-horse"
+    },
+    {
+      "code": "0xf0b0",
+      "name": "species-other"
+    },
+    {
+      "code": "0xf0b6",
+      "name": "species-pig"
+    },
+    {
+      "code": "0xf0b4",
+      "name": "species-sheep"
+    }
+  ],
+  "build_hash": "8dc7bb40ed07c8ada01abc75aecfa8be",
+  "repo": "softsupply/font-gansoft",
+  "prefix": "gs-",
+  "version": "1.0.0",
+  "keywords": [
+    "font",
+    "gansoft",
+    "fontgansoft",
+    "icon",
+    "font",
+    "bootstrap"
+  ],
+  "homepage": "https://www.softsupply.com/",
+  "id": "font-gansoft",
+  "name": "GanSoft"
+}

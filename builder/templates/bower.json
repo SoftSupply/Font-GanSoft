@@ -1,0 +1,22 @@
+{
+    "ignore": [
+        "*/.*",
+        "*.json",
+        "*.md",
+        "src",
+        "builder"
+    ],
+    "version": "{{version}}",
+    "name": "font-{{name}}",
+    "license": ["{{license}}"],
+    "authors": [
+        "Enner Perez <ennerperez@gmail.com>"
+    ],
+    "keywords": ["{{keywords}}"],
+    "main": [
+        "less/font-{{name}}.less",
+        "scss/font-{{name}}.scss"
+    ],
+    "homepage": "https://github.com/{{repo}}",
+    "description": "{{description}}"
+}
