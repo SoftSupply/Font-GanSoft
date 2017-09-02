@@ -1,6 +1,8 @@
 {
-  "name": "GanSoft",
-  "license": "MIT",
+  "description": "The GanSoft iconic font and CSS framework",
+  "license": [
+    "MIT"
+  ],
   "icons": [
     {
       "code": "0xf030",
@@ -95,50 +97,50 @@
       "name": "reproduction-scanning"
     },
     {
-      "code": "0xfa00",
+      "code": "0xf0a1",
       "name": "scores-condition"
     },
     {
-      "code": "0xfa12",
+      "code": "0xf0b2",
       "name": "species-buffalo"
     },
     {
-      "code": "0xfa18",
+      "code": "0xf0b8",
       "name": "species-cat"
     },
     {
-      "code": "0xfa11",
+      "code": "0xf0b1",
       "name": "species-cow"
     },
     {
-      "code": "0xfa17",
+      "code": "0xf0b7",
       "name": "species-dog"
     },
     {
-      "code": "0xfa15",
+      "code": "0xf0b5",
       "name": "species-goat"
     },
     {
-      "code": "0xfa13",
+      "code": "0xf0b3",
       "name": "species-horse"
     },
     {
-      "code": "0xfa10",
+      "code": "0xf0b0",
       "name": "species-other"
     },
     {
-      "code": "0xfa16",
+      "code": "0xf0b6",
       "name": "species-pig"
     },
     {
-      "code": "0xfa14",
+      "code": "0xf0b4",
       "name": "species-sheep"
     }
   ],
-  "build_hash": "e8e0d461cc44800af15d879d18b2b7e2",
+  "build_hash": "8dc7bb40ed07c8ada01abc75aecfa8be",
   "repo": "softsupply/font-gansoft",
   "prefix": "gs-",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "keywords": [
     "font",
     "gansoft",
@@ -147,5 +149,7 @@
     "font",
     "bootstrap"
   ],
-  "description": "The GanSoft iconic font and CSS framework"
+  "homepage": "https://www.softsupply.com/",
+  "id": "font-gansoft",
+  "name": "GanSoft"
 }

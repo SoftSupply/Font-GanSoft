@@ -10,7 +10,7 @@ SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 INPUT_SVG_DIR = os.path.join(SCRIPT_PATH, '..', '..', 'src')
 OUTPUT_FONT_DIR = os.path.join(SCRIPT_PATH, '..', '..', 'fonts')
 MANIFEST_PATH = os.path.join(SCRIPT_PATH, '..', 'manifest.json')
-BUILD_DATA_PATH = os.path.join(SCRIPT_PATH, '..', 'manifest.json')
+BUILD_DATA_PATH = os.path.join(SCRIPT_PATH, '..', 'build_data.json')
 AUTO_WIDTH = True
 KERNING = 15
 
@@ -24,13 +24,21 @@ f.em = 512
 f.ascent = 448
 f.descent = 64
 
-manifest_file = open(MANIFEST_PATH, 'r')
-manifest_data = json.loads(manifest_file.read())
-manifest_file.close()
-print "Load Manifest, Icons: %s" % (len(manifest_data['icons']))
+build_file = open(BUILD_DATA_PATH, 'r')
+build_data = json.loads(build_file.read())
+build_file.close()
+print "Load build data, Icons: %s" % (len(build_data['icons']))
 
-build_data = copy.deepcopy(manifest_data)
-build_data['icons'] = []
+
+if os.path.isfile(MANIFEST_PATH):
+    manifest_file = open(MANIFEST_PATH, 'r')
+    manifest_data = json.loads(manifest_file.read())
+    manifest_file.close()
+    print "Load manifest data, Icons: %s" % (len(manifest_data['icons']))
+else:
+    manifest_data = copy.deepcopy(build_data)
+
+manifest_data['icons'] = []
 
 font_name = manifest_data['name']
 m.update(font_name + ';')
@@ -46,7 +54,7 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
 
       # see if this file is already in the manifest
       chr_code = None
-      for icon in manifest_data['icons']:
+      for icon in build_data['icons']:
         if icon['name'] == name:
           chr_code = icon['code']
           break
@@ -58,7 +66,7 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
         while True:
           chr_code = '0x%x' % (cp)
           already_exists = False
-          for icon in manifest_data['icons']:
+          for icon in build_data['icons']:
             if icon.get('code') == chr_code:
               already_exists = True
               cp += 1
@@ -67,16 +75,11 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
           if not already_exists:
             break
 
-        print ' - %s' % chr_code
-        manifest_data['icons'].append({
-          'name': name,
-          'code': chr_code
-        })
-
-      build_data['icons'].append({
+      #print ' - %s' % chr_code
+      manifest_data['icons'].append({
         'name': name,
         'code': chr_code
-      })
+      })    
 
       if ext in ['.svg']:
         # hack removal of <switch> </switch> tags
@@ -167,10 +170,5 @@ else:
   print "Save Manifest, Icons: %s" % (len(manifest_data['icons']))
   f = open(MANIFEST_PATH, 'w')
   f.write(json.dumps(manifest_data, indent=2, separators=(',', ': ')))
-  f.close()
-
-  print "Save Build, Icons: %s" % (len(build_data['icons']))
-  f = open(BUILD_DATA_PATH, 'w')
-  f.write(json.dumps(build_data, indent=2, separators=(',', ': ')))
   f.close()
 

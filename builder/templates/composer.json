@@ -1,0 +1,16 @@
+{
+    "name": "{{repo}}",
+    "license": ["{{license}}"],
+    "extra": {},
+    "authors": [
+        {
+            "homepage": "http://www.ennerperez.com.ve/",
+            "role": "Developer",
+            "name": "Enner Perez",
+            "email": "ennerperez@gmail.com"
+        }
+    ],
+    "keywords": ["{{keywords}}"],
+    "homepage": "{{homepage}}",
+    "description": "{{description}}"
+}

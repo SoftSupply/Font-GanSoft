@@ -20,7 +20,6 @@ def main():
   generate_scss(data)
   generate_less(data)
   generate_cheatsheet(data)
-  generate_component_json(data)
   generate_composer_json(data)
   generate_bower_json(data)
 
@@ -151,8 +150,8 @@ def generate_cheatsheet(data):
   print "Generate Cheatsheet"
 
   cheatsheet_file_path = os.path.join(ROOT_PATH, 'cheatsheet.html')
-  template_path = os.path.join(BUILDER_PATH, 'cheatsheet', 'template.html')
-  icon_row_path = os.path.join(BUILDER_PATH, 'cheatsheet', 'icon-row.html')
+  template_path = os.path.join(BUILDER_PATH, 'templates', 'cheatsheet.html')
+  icon_row_path = os.path.join(BUILDER_PATH, 'templates', '_icon-row.html')
 
   f = open(template_path, 'r')
   template_html = f.read()
@@ -187,91 +186,50 @@ def generate_cheatsheet(data):
   f.write(template_html)
   f.close()
 
-
-def generate_component_json(data):
-  print "Generate component.json"
-  d = {
-    "name": data['name'],
-    "repo": data['repo'],
-    "description": data['description'],
-    "version": data['version'],
-    "keywords": data['keywords'],
-    "dependencies": {},
-    "development": {},
-    "license": data['license'],
-    "styles": [
-      "css/font-%s.css" % (data['name'].lower())
-    ],
-    "fonts": [
-      "fonts/font-%s.eot" % (data['name'].lower()),
-      "fonts/font-%s.svg" % (data['name'].lower()),
-      "fonts/font-%s.ttf" % (data['name'].lower()),
-      "fonts/font-%s.woff" % (data['name'].lower())
-    ]
-  }
-  txt = json.dumps(d, indent=4, separators=(',', ': '))
-
-  component_file_path = os.path.join(ROOT_PATH, 'component.json')
-  f = open(component_file_path, 'w')
-  f.write(txt)
-  f.close()
-
-
 def generate_composer_json(data):
   print "Generate composer.json"
-  d = {
-    "name": data['repo'],
-    "description": data['description'],
-    "keywords": data['keywords'],
-    "homepage": "https://www.softsupply.com/",
-    "authors": [
-      {
-        "name": "Enner Perez",
-        "email": "ennerperez@gmail.com",
-        "role": "Developer",
-        "homepage": "http://www.ennerperez.com.ve/"
-      }
-    ],
-    "extra": {},
-    "license": [ data['license'] ]
-  }
-  txt = json.dumps(d, indent=4, separators=(',', ': '))
+
+  composer_template_path = os.path.join(BUILDER_PATH, 'templates', 'composer.json')
+
+  f = open(composer_template_path, 'r')
+  template_composer = f.read()
+  f.close()
+
+  template_composer = template_composer.replace("{{name}}", data["name"].lower())
+  template_composer = template_composer.replace("{{repo}}", data["repo"].lower())
+  template_composer = template_composer.replace("{{version}}", data["version"])
+  template_composer = template_composer.replace("{{repo}}", data["repo"].lower())
+  template_composer = template_composer.replace("{{license}}", ", ".join(data["license"]))
+  template_composer = template_composer.replace("{{keywords}}", ", ".join(data["keywords"]))
+  template_composer = template_composer.replace("{{homepage}}", data["homepage"])
+  template_composer = template_composer.replace("{{description}}", data["description"])
 
   composer_file_path = os.path.join(ROOT_PATH, 'composer.json')
   f = open(composer_file_path, 'w')
-  f.write(txt)
+  f.write(template_composer)
   f.close()
 
 
 def generate_bower_json(data):
   print "Generate bower.json"
-  d = {
-    "name": data['repo'],
-    "version": data['version'],
-    "homepage": "https://github.com/" + data['repo'],
-    "authors": [
-      "Enner Perez <ennerperez@gmail.com>"
-    ],
-    "description": data['description'],
-    "main": [
-      "less/font-gansoft.less", 
-      "scss/font-gansoft.scss" 
-    ],
-    "keywords": data['keywords'],
-    "license": data['license'],
-    "ignore": [
-       "*/.*", 
-      "*.json", 
-      "*.md", 
-      "src", 
-      "builder"
-    ]
-  }
-  txt = json.dumps(d, indent=4, separators=(',', ': '))
+
+  bower_template_path = os.path.join(BUILDER_PATH, 'templates', 'bower.json')
+
+  f = open(bower_template_path, 'r')
+  template_bower = f.read()
+  f.close()
+
+  template_bower = template_bower.replace("{{name}}", data["name"].lower())
+  template_bower = template_bower.replace("{{repo}}", data["repo"].lower())
+  template_bower = template_bower.replace("{{version}}", data["version"])
+  template_bower = template_bower.replace("{{license}}", ", ".join(data["license"]))
+  template_bower = template_bower.replace("{{keywords}}", ", ".join(data["keywords"]))
+  template_bower = template_bower.replace("{{homepage}}", data["homepage"])
+  template_bower = template_bower.replace("{{description}}", data["description"])
 
   bower_file_path = os.path.join(ROOT_PATH, 'bower.json')
   f = open(bower_file_path, 'w')
-  f.write(txt)
+  f.write(template_bower)
   f.close()
 
 

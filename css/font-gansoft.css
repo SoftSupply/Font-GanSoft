@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@font-face { font-family: "GanSoft"; src: url("../fonts/font-gansoft.eot?v=1.1.0"); src: url("../fonts/font-gansoft.eot?v=1.1.0#iefix") format("embedded-opentype"), url("../fonts/font-gansoft.ttf?v=1.1.0") format("truetype"), url("../fonts/font-gansoft.woff?v=1.1.0") format("woff"), url("../fonts/font-gansoft.svg?v=1.1.0#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "GanSoft"; src: url("../fonts/font-gansoft.eot?v=1.0.0"); src: url("../fonts/font-gansoft.eot?v=1.0.0#iefix") format("embedded-opentype"), url("../fonts/font-gansoft.ttf?v=1.0.0") format("truetype"), url("../fonts/font-gansoft.woff?v=1.0.0") format("woff"), url("../fonts/font-gansoft.svg?v=1.0.0#Ionicons") format("svg"); font-weight: normal; font-style: normal; }
 .gs, .gansoft, .gs-growth:before, .gs-growth-weight:before, .gs-main-alert:before, .gs-main-calendar:before, .gs-main-code:before, .gs-main-control:before, .gs-main-definition:before, .gs-main-edit:before, .gs-main-settings:before, .gs-main-tasks:before, .gs-production:before, .gs-production-drying:before, .gs-production-milking:before, .gs-registration:before, .gs-registration-draft:before, .gs-registration-herd:before, .gs-registration-location:before, .gs-registration-ownership:before, .gs-registration-tagging:before, .gs-reproduction:before, .gs-reproduction-birthing:before, .gs-reproduction-mating:before, .gs-reproduction-scanning:before, .gs-scores-condition:before, .gs-species-buffalo:before, .gs-species-cat:before, .gs-species-cow:before, .gs-species-dog:before, .gs-species-goat:before, .gs-species-horse:before, .gs-species-other:before, .gs-species-pig:before, .gs-species-sheep:before { display: inline-block; font: normal normal normal 14px/1 "GanSoft"; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
@@ -83,24 +83,24 @@
 
 .gs-reproduction-scanning:before { content: ""; }
 
-.gs-scores-condition:before { content: "切"; }
+.gs-scores-condition:before { content: ""; }
 
-.gs-species-buffalo:before { content: "晴"; }
+.gs-species-buffalo:before { content: ""; }
 
-.gs-species-cat:before { content: "礼"; }
+.gs-species-cat:before { content: ""; }
 
-.gs-species-cow:before { content: "﨑"; }
+.gs-species-cow:before { content: ""; }
 
-.gs-species-dog:before { content: "益"; }
+.gs-species-dog:before { content: ""; }
 
-.gs-species-goat:before { content: "凞"; }
+.gs-species-goat:before { content: ""; }
 
-.gs-species-horse:before { content: "﨓"; }
+.gs-species-horse:before { content: ""; }
 
-.gs-species-other:before { content: "塚"; }
+.gs-species-other:before { content: ""; }
 
-.gs-species-pig:before { content: "猪"; }
+.gs-species-pig:before { content: ""; }
 
-.gs-species-sheep:before { content: "﨔"; }
+.gs-species-sheep:before { content: ""; }
 
 /*# sourceMappingURL=font-gansoft.css.map */

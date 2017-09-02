@@ -6,20 +6,13 @@
         "src",
         "builder"
     ],
-    "version": "1.1.0",
-    "name": "softsupply/font-gansoft",
-    "license": "MIT",
+    "version": "1.0.0",
+    "name": "font-gansoft",
+    "license": ["MIT"],
     "authors": [
         "Enner Perez <ennerperez@gmail.com>"
     ],
-    "keywords": [
-        "font",
-        "gansoft",
-        "fontgansoft",
-        "icon",
-        "font",
-        "bootstrap"
-    ],
+    "keywords": ["font, gansoft, fontgansoft, icon, font, bootstrap"],
     "main": [
         "less/font-gansoft.less",
         "scss/font-gansoft.scss"
