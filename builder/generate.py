@@ -192,13 +192,13 @@ def generate_component_json(data):
   print "Generate component.json"
   d = {
     "name": data['name'],
-    "repo": "softsupply/font-gansoft",
-    "description": "The GanSoft iconic font and CSS framework",
+    "repo": data['repo'],
+    "description": data['description'],
     "version": data['version'],
-    "keywords": ["font", "gansoft", "fontgansoft", "icon", "font", "bootstrap"],
+    "keywords": data['keywords'],
     "dependencies": {},
     "development": {},
-    "license": "MIT",
+    "license": data['license'],
     "styles": [
       "css/font-%s.css" % (data['name'].lower())
     ],
@@ -220,9 +220,9 @@ def generate_component_json(data):
 def generate_composer_json(data):
   print "Generate composer.json"
   d = {
-    "name": "softsupply/font-gansoft",
-    "description": "The GanSoft iconic font and CSS framework",
-    "keywords": ["font", "gansoft", "fontgansoft", "icon", "font", "bootstrap"],
+    "name": data['repo'],
+    "description": data['description'],
+    "keywords": data['keywords'],
     "homepage": "https://www.softsupply.com/",
     "authors": [
       {
@@ -233,7 +233,7 @@ def generate_composer_json(data):
       }
     ],
     "extra": {},
-    "license": [ "MIT" ]
+    "license": [ data['license'] ]
   }
   txt = json.dumps(d, indent=4, separators=(',', ': '))
 
@@ -246,26 +246,25 @@ def generate_composer_json(data):
 def generate_bower_json(data):
   print "Generate bower.json"
   d = {
-    "name": data['name'],
+    "name": data['repo'],
     "version": data['version'],
-    "homepage": "https://github.com/softsupply/font-gansoft",
+    "homepage": "https://github.com/" + data['repo'],
     "authors": [
       "Enner Perez <ennerperez@gmail.com>"
     ],
-    "description": "The GanSoft iconic font and CSS framework",
+    "description": data['description'],
     "main": [
-      "css/*",
-      "fonts/*"
+      "less/font-gansoft.less", 
+      "scss/font-gansoft.scss" 
     ],
-    "keywords": ["font", "gansoft", "fontgansoft", "icon", "font", "bootstrap"],
-    "license": "MIT",
+    "keywords": data['keywords'],
+    "license": data['license'],
     "ignore": [
-      "**/.*",
-      "builder",
-      "node_modules",
-      "bower_components",
-      "test",
-      "tests"
+       "*/.*", 
+      "*.json", 
+      "*.md", 
+      "src", 
+      "builder"
     ]
   }
   txt = json.dumps(d, indent=4, separators=(',', ': '))

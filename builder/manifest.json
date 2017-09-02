@@ -1,8 +1,6 @@
 {
-  "build_hash": "e8e0d461cc44800af15d879d18b2b7e2",
-  "prefix": "gs-",
-  "version": "1.1.0",
   "name": "GanSoft",
+  "license": "MIT",
   "icons": [
     {
       "code": "0xf030",
@@ -136,5 +134,18 @@
       "code": "0xfa14",
       "name": "species-sheep"
     }
-  ]
+  ],
+  "build_hash": "e8e0d461cc44800af15d879d18b2b7e2",
+  "repo": "softsupply/font-gansoft",
+  "prefix": "gs-",
+  "version": "1.1.0",
+  "keywords": [
+    "font",
+    "gansoft",
+    "fontgansoft",
+    "icon",
+    "font",
+    "bootstrap"
+  ],
+  "description": "The GanSoft iconic font and CSS framework"
 }

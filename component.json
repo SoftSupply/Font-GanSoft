@@ -1,0 +1,26 @@
+{
+    "repo": "softsupply/font-gansoft",
+    "development": {},
+    "version": "1.1.0",
+    "styles": [
+        "css/font-gansoft.css"
+    ],
+    "name": "GanSoft",
+    "dependencies": {},
+    "keywords": [
+        "font",
+        "gansoft",
+        "fontgansoft",
+        "icon",
+        "font",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "fonts": [
+        "fonts/font-gansoft.eot",
+        "fonts/font-gansoft.svg",
+        "fonts/font-gansoft.ttf",
+        "fonts/font-gansoft.woff"
+    ],
+    "description": "The GanSoft iconic font and CSS framework"
+}

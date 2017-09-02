@@ -1,0 +1,25 @@
+{
+    "name": "softsupply/font-gansoft",
+    "license": [
+        "MIT"
+    ],
+    "extra": {},
+    "authors": [
+        {
+            "homepage": "http://www.ennerperez.com.ve/",
+            "role": "Developer",
+            "name": "Enner Perez",
+            "email": "ennerperez@gmail.com"
+        }
+    ],
+    "keywords": [
+        "font",
+        "gansoft",
+        "fontgansoft",
+        "icon",
+        "font",
+        "bootstrap"
+    ],
+    "homepage": "https://www.softsupply.com/",
+    "description": "The GanSoft iconic font and CSS framework"
+}
