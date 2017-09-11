@@ -77,6 +77,6 @@
     {"code":"0xf0b5","name":"species-goat"},
     {"code":"0xf0b6","name":"species-pig"},
     {"code":"0xf0b7","name":"species-dog"},
-    {"code":"0xf0b8","name":"species-cat"}
+    {"code":"0xf0b8","name":"species-cat"},
   ]
 }
