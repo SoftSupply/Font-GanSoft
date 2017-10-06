@@ -5,12 +5,76 @@
   ],
   "icons": [
     {
+      "code": "0xf080",
+      "name": "fibre"
+    },
+    {
+      "code": "0xf082",
+      "name": "fibre-measurements"
+    },
+    {
+      "code": "0xf081",
+      "name": "fibre-shearing"
+    },
+    {
       "code": "0xf030",
       "name": "growth"
     },
     {
+      "code": "0xf036",
+      "name": "growth-draft"
+    },
+    {
+      "code": "0xf034",
+      "name": "growth-feed"
+    },
+    {
+      "code": "0xf037",
+      "name": "growth-measurements"
+    },
+    {
+      "code": "0xf035",
+      "name": "growth-paddock"
+    },
+    {
+      "code": "0xf033",
+      "name": "growth-progeny"
+    },
+    {
+      "code": "0xf032",
+      "name": "growth-weaning"
+    },
+    {
       "code": "0xf031",
       "name": "growth-weight"
+    },
+    {
+      "code": "0xf040",
+      "name": "health"
+    },
+    {
+      "code": "0xf041",
+      "name": "health-diagnosis"
+    },
+    {
+      "code": "0xf045",
+      "name": "health-injury"
+    },
+    {
+      "code": "0xf043",
+      "name": "health-procedure"
+    },
+    {
+      "code": "0xf044",
+      "name": "health-surgery"
+    },
+    {
+      "code": "0xf042",
+      "name": "health-treatment"
+    },
+    {
+      "code": "0xf000",
+      "name": "main"
     },
     {
       "code": "0xf001",
@@ -45,16 +109,36 @@
       "name": "main-tasks"
     },
     {
+      "code": "0xf070",
+      "name": "meat"
+    },
+    {
+      "code": "0xf071",
+      "name": "meat-carcass"
+    },
+    {
       "code": "0xf060",
       "name": "production"
+    },
+    {
+      "code": "0xf064",
+      "name": "production-characteristics"
     },
     {
       "code": "0xf063",
       "name": "production-drying"
     },
     {
+      "code": "0xf065",
+      "name": "production-herd"
+    },
+    {
       "code": "0xf061",
       "name": "production-milking"
+    },
+    {
+      "code": "0xf062",
+      "name": "production-yield"
     },
     {
       "code": "0xf010",
@@ -63,6 +147,10 @@
     {
       "code": "0xf017",
       "name": "registration-draft"
+    },
+    {
+      "code": "0xf013",
+      "name": "registration-fate"
     },
     {
       "code": "0xf014",
@@ -77,6 +165,10 @@
       "name": "registration-ownership"
     },
     {
+      "code": "0xf012",
+      "name": "registration-retagging"
+    },
+    {
       "code": "0xf011",
       "name": "registration-tagging"
     },
@@ -89,12 +181,32 @@
       "name": "reproduction-birthing"
     },
     {
+      "code": "0xf024",
+      "name": "reproduction-egg"
+    },
+    {
+      "code": "0xf023",
+      "name": "reproduction-embryo"
+    },
+    {
       "code": "0xf022",
       "name": "reproduction-mating"
     },
     {
+      "code": "0xf021",
+      "name": "reproduction-running"
+    },
+    {
       "code": "0xf025",
       "name": "reproduction-scanning"
+    },
+    {
+      "code": "0xf026",
+      "name": "reproduction-semen"
+    },
+    {
+      "code": "0xf0a0",
+      "name": "scores"
     },
     {
       "code": "0xf0a1",
@@ -135,12 +247,44 @@
     {
       "code": "0xf0b4",
       "name": "species-sheep"
+    },
+    {
+      "code": "0xf050",
+      "name": "tests"
+    },
+    {
+      "code": "0xf052",
+      "name": "tests-biopsy"
+    },
+    {
+      "code": "0xf051",
+      "name": "tests-blood"
+    },
+    {
+      "code": "0xf053",
+      "name": "tests-ct"
+    },
+    {
+      "code": "0xf055",
+      "name": "tests-dna"
+    },
+    {
+      "code": "0xf054",
+      "name": "tests-mir"
+    },
+    {
+      "code": "0xf090",
+      "name": "velvet"
+    },
+    {
+      "code": "0xf091",
+      "name": "velvet-measurements"
     }
   ],
-  "build_hash": "8dc7bb40ed07c8ada01abc75aecfa8be",
+  "build_hash": "9b847cd04d647bc2951cab3ab6c04d35",
   "repo": "softsupply/font-gansoft",
   "prefix": "gs-",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "font",
     "gansoft",

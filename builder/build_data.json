@@ -2,7 +2,7 @@
   "id": "font-gansoft",
   "name": "GanSoft",
   "description": "The GanSoft iconic font and CSS framework",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repo": "softsupply/font-gansoft",
   "prefix": "gs-",
   "keywords": ["font","gansoft","fontgansoft","icon","font","bootstrap"],
@@ -77,6 +77,6 @@
     {"code":"0xf0b5","name":"species-goat"},
     {"code":"0xf0b6","name":"species-pig"},
     {"code":"0xf0b7","name":"species-dog"},
-    {"code":"0xf0b8","name":"species-cat"},
+    {"code":"0xf0b8","name":"species-cat"}
   ]
 }
