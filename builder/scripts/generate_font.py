@@ -5,6 +5,7 @@ import subprocess
 import tempfile
 import json
 import copy
+import datetime
 
 SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 INPUT_SVG_DIR = os.path.join(SCRIPT_PATH, '..', '..', 'src')
@@ -39,9 +40,14 @@ else:
     manifest_data = copy.deepcopy(build_data)
 
 manifest_data['icons'] = []
+now = datetime.datetime.now()
 
 font_name = manifest_data['name']
+font_version = manifest_data['version']
+font_author = manifest_data['author'] + ' ' + str(now.year)
 m.update(font_name + ';')
+m.update(font_version + ';')
+m.update(font_author  + ';')
 m.update(manifest_data['prefix'] + ';')
 
 for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
@@ -130,6 +136,8 @@ else:
   f.fontname = font_name
   f.familyname = font_name
   f.fullname = font_name
+  f.version = font_version
+  f.copyright = font_author
   f.generate(fontfile + '.ttf')
   f.generate(fontfile + '.svg')
 

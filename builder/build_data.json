@@ -8,6 +8,7 @@
   "keywords": ["font","gansoft","fontgansoft","icon","font","bootstrap"],
   "homepage": "https://www.softsupply.com/",
   "license": ["MIT"],
+  "author": "TD Pro, C.A.",
   "icons": [
     {"code":"0xf000","name":"main"},
     {"code":"0xf001","name":"main-alert"},

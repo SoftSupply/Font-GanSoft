@@ -281,7 +281,8 @@
       "name": "velvet-measurements"
     }
   ],
-  "build_hash": "e8a57140b33d79cfeb69fa6a71203fc0",
+  "build_hash": "b99afcf019f0a9c0771a88ec160797cd",
+  "author": "TD Pro, C.A.",
   "repo": "softsupply/font-gansoft",
   "prefix": "gs-",
   "version": "1.1.0",
