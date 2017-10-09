@@ -1,6 +1,22 @@
 .gansoft,
+.#{$font-gansoft-prefix}fibre:before,
+.#{$font-gansoft-prefix}fibre-measurements:before,
+.#{$font-gansoft-prefix}fibre-shearing:before,
 .#{$font-gansoft-prefix}growth:before,
+.#{$font-gansoft-prefix}growth-draft:before,
+.#{$font-gansoft-prefix}growth-feed:before,
+.#{$font-gansoft-prefix}growth-measurements:before,
+.#{$font-gansoft-prefix}growth-paddock:before,
+.#{$font-gansoft-prefix}growth-progeny:before,
+.#{$font-gansoft-prefix}growth-weaning:before,
 .#{$font-gansoft-prefix}growth-weight:before,
+.#{$font-gansoft-prefix}health:before,
+.#{$font-gansoft-prefix}health-diagnosis:before,
+.#{$font-gansoft-prefix}health-injury:before,
+.#{$font-gansoft-prefix}health-procedure:before,
+.#{$font-gansoft-prefix}health-surgery:before,
+.#{$font-gansoft-prefix}health-treatment:before,
+.#{$font-gansoft-prefix}main:before,
 .#{$font-gansoft-prefix}main-alert:before,
 .#{$font-gansoft-prefix}main-calendar:before,
 .#{$font-gansoft-prefix}main-code:before,
@@ -9,19 +25,31 @@
 .#{$font-gansoft-prefix}main-edit:before,
 .#{$font-gansoft-prefix}main-settings:before,
 .#{$font-gansoft-prefix}main-tasks:before,
+.#{$font-gansoft-prefix}meat:before,
+.#{$font-gansoft-prefix}meat-carcass:before,
 .#{$font-gansoft-prefix}production:before,
+.#{$font-gansoft-prefix}production-characteristics:before,
 .#{$font-gansoft-prefix}production-drying:before,
+.#{$font-gansoft-prefix}production-herd:before,
 .#{$font-gansoft-prefix}production-milking:before,
+.#{$font-gansoft-prefix}production-yield:before,
 .#{$font-gansoft-prefix}registration:before,
 .#{$font-gansoft-prefix}registration-draft:before,
+.#{$font-gansoft-prefix}registration-fate:before,
 .#{$font-gansoft-prefix}registration-herd:before,
 .#{$font-gansoft-prefix}registration-location:before,
 .#{$font-gansoft-prefix}registration-ownership:before,
+.#{$font-gansoft-prefix}registration-retagging:before,
 .#{$font-gansoft-prefix}registration-tagging:before,
 .#{$font-gansoft-prefix}reproduction:before,
 .#{$font-gansoft-prefix}reproduction-birthing:before,
+.#{$font-gansoft-prefix}reproduction-egg:before,
+.#{$font-gansoft-prefix}reproduction-embryo:before,
 .#{$font-gansoft-prefix}reproduction-mating:before,
+.#{$font-gansoft-prefix}reproduction-running:before,
 .#{$font-gansoft-prefix}reproduction-scanning:before,
+.#{$font-gansoft-prefix}reproduction-semen:before,
+.#{$font-gansoft-prefix}scores:before,
 .#{$font-gansoft-prefix}scores-condition:before,
 .#{$font-gansoft-prefix}species-buffalo:before,
 .#{$font-gansoft-prefix}species-cat:before,
@@ -31,12 +59,36 @@
 .#{$font-gansoft-prefix}species-horse:before,
 .#{$font-gansoft-prefix}species-other:before,
 .#{$font-gansoft-prefix}species-pig:before,
-.#{$font-gansoft-prefix}species-sheep:before
+.#{$font-gansoft-prefix}species-sheep:before,
+.#{$font-gansoft-prefix}tests:before,
+.#{$font-gansoft-prefix}tests-biopsy:before,
+.#{$font-gansoft-prefix}tests-blood:before,
+.#{$font-gansoft-prefix}tests-ct:before,
+.#{$font-gansoft-prefix}tests-dna:before,
+.#{$font-gansoft-prefix}tests-mir:before,
+.#{$font-gansoft-prefix}velvet:before,
+.#{$font-gansoft-prefix}velvet-measurements:before
 {
   @extend .gs;
 }
+.#{$font-gansoft-prefix}fibre:before { content: $font-gansoft-var-fibre; }
+.#{$font-gansoft-prefix}fibre-measurements:before { content: $font-gansoft-var-fibre-measurements; }
+.#{$font-gansoft-prefix}fibre-shearing:before { content: $font-gansoft-var-fibre-shearing; }
 .#{$font-gansoft-prefix}growth:before { content: $font-gansoft-var-growth; }
+.#{$font-gansoft-prefix}growth-draft:before { content: $font-gansoft-var-growth-draft; }
+.#{$font-gansoft-prefix}growth-feed:before { content: $font-gansoft-var-growth-feed; }
+.#{$font-gansoft-prefix}growth-measurements:before { content: $font-gansoft-var-growth-measurements; }
+.#{$font-gansoft-prefix}growth-paddock:before { content: $font-gansoft-var-growth-paddock; }
+.#{$font-gansoft-prefix}growth-progeny:before { content: $font-gansoft-var-growth-progeny; }
+.#{$font-gansoft-prefix}growth-weaning:before { content: $font-gansoft-var-growth-weaning; }
 .#{$font-gansoft-prefix}growth-weight:before { content: $font-gansoft-var-growth-weight; }
+.#{$font-gansoft-prefix}health:before { content: $font-gansoft-var-health; }
+.#{$font-gansoft-prefix}health-diagnosis:before { content: $font-gansoft-var-health-diagnosis; }
+.#{$font-gansoft-prefix}health-injury:before { content: $font-gansoft-var-health-injury; }
+.#{$font-gansoft-prefix}health-procedure:before { content: $font-gansoft-var-health-procedure; }
+.#{$font-gansoft-prefix}health-surgery:before { content: $font-gansoft-var-health-surgery; }
+.#{$font-gansoft-prefix}health-treatment:before { content: $font-gansoft-var-health-treatment; }
+.#{$font-gansoft-prefix}main:before { content: $font-gansoft-var-main; }
 .#{$font-gansoft-prefix}main-alert:before { content: $font-gansoft-var-main-alert; }
 .#{$font-gansoft-prefix}main-calendar:before { content: $font-gansoft-var-main-calendar; }
 .#{$font-gansoft-prefix}main-code:before { content: $font-gansoft-var-main-code; }
@@ -45,19 +97,31 @@
 .#{$font-gansoft-prefix}main-edit:before { content: $font-gansoft-var-main-edit; }
 .#{$font-gansoft-prefix}main-settings:before { content: $font-gansoft-var-main-settings; }
 .#{$font-gansoft-prefix}main-tasks:before { content: $font-gansoft-var-main-tasks; }
+.#{$font-gansoft-prefix}meat:before { content: $font-gansoft-var-meat; }
+.#{$font-gansoft-prefix}meat-carcass:before { content: $font-gansoft-var-meat-carcass; }
 .#{$font-gansoft-prefix}production:before { content: $font-gansoft-var-production; }
+.#{$font-gansoft-prefix}production-characteristics:before { content: $font-gansoft-var-production-characteristics; }
 .#{$font-gansoft-prefix}production-drying:before { content: $font-gansoft-var-production-drying; }
+.#{$font-gansoft-prefix}production-herd:before { content: $font-gansoft-var-production-herd; }
 .#{$font-gansoft-prefix}production-milking:before { content: $font-gansoft-var-production-milking; }
+.#{$font-gansoft-prefix}production-yield:before { content: $font-gansoft-var-production-yield; }
 .#{$font-gansoft-prefix}registration:before { content: $font-gansoft-var-registration; }
 .#{$font-gansoft-prefix}registration-draft:before { content: $font-gansoft-var-registration-draft; }
+.#{$font-gansoft-prefix}registration-fate:before { content: $font-gansoft-var-registration-fate; }
 .#{$font-gansoft-prefix}registration-herd:before { content: $font-gansoft-var-registration-herd; }
 .#{$font-gansoft-prefix}registration-location:before { content: $font-gansoft-var-registration-location; }
 .#{$font-gansoft-prefix}registration-ownership:before { content: $font-gansoft-var-registration-ownership; }
+.#{$font-gansoft-prefix}registration-retagging:before { content: $font-gansoft-var-registration-retagging; }
 .#{$font-gansoft-prefix}registration-tagging:before { content: $font-gansoft-var-registration-tagging; }
 .#{$font-gansoft-prefix}reproduction:before { content: $font-gansoft-var-reproduction; }
 .#{$font-gansoft-prefix}reproduction-birthing:before { content: $font-gansoft-var-reproduction-birthing; }
+.#{$font-gansoft-prefix}reproduction-egg:before { content: $font-gansoft-var-reproduction-egg; }
+.#{$font-gansoft-prefix}reproduction-embryo:before { content: $font-gansoft-var-reproduction-embryo; }
 .#{$font-gansoft-prefix}reproduction-mating:before { content: $font-gansoft-var-reproduction-mating; }
+.#{$font-gansoft-prefix}reproduction-running:before { content: $font-gansoft-var-reproduction-running; }
 .#{$font-gansoft-prefix}reproduction-scanning:before { content: $font-gansoft-var-reproduction-scanning; }
+.#{$font-gansoft-prefix}reproduction-semen:before { content: $font-gansoft-var-reproduction-semen; }
+.#{$font-gansoft-prefix}scores:before { content: $font-gansoft-var-scores; }
 .#{$font-gansoft-prefix}scores-condition:before { content: $font-gansoft-var-scores-condition; }
 .#{$font-gansoft-prefix}species-buffalo:before { content: $font-gansoft-var-species-buffalo; }
 .#{$font-gansoft-prefix}species-cat:before { content: $font-gansoft-var-species-cat; }
@@ -68,3 +132,11 @@
 .#{$font-gansoft-prefix}species-other:before { content: $font-gansoft-var-species-other; }
 .#{$font-gansoft-prefix}species-pig:before { content: $font-gansoft-var-species-pig; }
 .#{$font-gansoft-prefix}species-sheep:before { content: $font-gansoft-var-species-sheep; }
+.#{$font-gansoft-prefix}tests:before { content: $font-gansoft-var-tests; }
+.#{$font-gansoft-prefix}tests-biopsy:before { content: $font-gansoft-var-tests-biopsy; }
+.#{$font-gansoft-prefix}tests-blood:before { content: $font-gansoft-var-tests-blood; }
+.#{$font-gansoft-prefix}tests-ct:before { content: $font-gansoft-var-tests-ct; }
+.#{$font-gansoft-prefix}tests-dna:before { content: $font-gansoft-var-tests-dna; }
+.#{$font-gansoft-prefix}tests-mir:before { content: $font-gansoft-var-tests-mir; }
+.#{$font-gansoft-prefix}velvet:before { content: $font-gansoft-var-velvet; }
+.#{$font-gansoft-prefix}velvet-measurements:before { content: $font-gansoft-var-velvet-measurements; }

@@ -1,7 +1,8 @@
+# Font-GanSoft
+
 ![logo](.editoricon.png)
 
-# Font-GanSoft v1.0.0
-### The GanSoft iconic font and CSS framework
+## The GanSoft iconic font and CSS framework
 
 ---------------------------------------
 
@@ -22,8 +23,9 @@ We intend for this icon pack to be used with [GanSoft](https://www.softsupply.co
 
 Requires **Ruby 1.9.3+**, **WOFF2**, **FontForge** with Python scripting.
 
+#### On Mac
+
 ```sh
-# On Mac
 brew tap bramstein/webfonttools
 brew update
 brew install woff2
@@ -31,15 +33,21 @@ brew install woff2
 brew install fontforge --with-python
 brew install eot-utils
 gem install fontcustom
+```
 
-# On Linux
+#### On Linux
+
+```sh
 sudo apt-get install zlib1g-dev fontforge
 git clone https://github.com/bramstein/sfnt2woff-zopfli.git sfnt2woff-zopfli && cd sfnt2woff-zopfli && make && mv sfnt2woff-zopfli /usr/local/bin/sfnt2woff
 git clone --recursive https://github.com/google/woff2.git && cd woff2 && make clean all && sudo mv woff2_compress /usr/local/bin/ && sudo mv woff2_decompress /usr/local/bin/
 gem install fontcustom
+```
 
-# On Windows:
-1. Install fontforge:  http://fontforge.github.io/en-US/downloads/windows/
+#### On Windows
+
+```cmd
+1. Install fontforge:  http://fontforge.github.io/en-US/downloads/windows-dl/
 2. Add the installation path to your System PATH variable (%programfiles(x86)%\FontForgeBuilds\bin)
 3. Open up a new command prompt and test it. `fontforge -help`
 4. gem install fontcustom
@@ -51,6 +59,8 @@ Font GanSoft will be maintained under the Semantic Versioning guidelines as much
 
 `<major>.<minor>.<patch>`
 
+Edit [manifest.json](builder\manifest.json)
+
 And constructed with the following guidelines:
 
 * Breaking backward compatibility bumps the major (and resets the minor and patch)
@@ -59,12 +69,16 @@ And constructed with the following guidelines:
 
 For more information on SemVer, please visit [http://semver.org](http://semver.org).
 
+### Building
+
+    $python .\builder\generate.py
+
 ### Implementing
 
-**Add the library to your project**
+#### Add the library to your project
 
-    $ bower install font-gansoft --save
- 
+    $bower install font-gansoft --save
+
 ### Bugs and feature requests
 
 Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](issues/new).
